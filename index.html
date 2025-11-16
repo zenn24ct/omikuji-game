@@ -51,7 +51,7 @@
   <div class="card" role="main" aria-labelledby="title">
     <div class="ribbon">明日いい日になりますように ✨</div>
     <h1 id="title">おみくじを引いてみよう</h1>
-    <p class="lead">ボタンを押すと今日の運勢が出ます。ゆっくり深呼吸してね。</p>
+    <p class="lead">ボタンを押すと今日の運勢が出るよ！</p>
 
     <div id="result" class="omikuji pop" aria-live="polite" aria-atomic="true"></div>
 
@@ -60,7 +60,6 @@
       <button id="clear" style="background:#eee;color:#333;font-weight:700;">リセット</button>
     </div>
 
-    <p class="note">※ 結果はランダム。良い方向にとらえて明日を迎えよう！</p>
   </div>
 
 <script>
@@ -96,7 +95,7 @@ const draws = [
 
   clearBtn.addEventListener('click', ()=>{
     resultEl.classList.remove('show');
-    setTimeout(()=> resultEl.textContent = '', 120);
+    setTimeout(()=> resultEl.textContent = '', 100);
   });
 </script>
 </body>
